@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<style>
+    body{
+        background-color:rgba(242, 238, 238, 0.7);
+        
+    }
+    a{
+        text-decoration: none;
+        color: rgb(9, 9, 175);
+        margin-left: 9px;
+        margin-bottom: 0;
+    }
+    .follow{
+        margin: 0;
+        padding: 0;
+    }
+    .form{
+        height: 300px;
+        width: 300px;
+        border-radius: 10%;
+        background-color: rgb(225, 225, 225);
+    }
+    label{
+        margin-left: 9px;
+        font-size: 170%;
+    }
+    .error{
+        color: red;
+    }
+    input{
+        border-radius: 10%;
+        border-color: rgb(55, 54, 54);
+    }
+    .Content{
+        font-family: cursive;
+    }
+</style>
+<body>
+    <center class="Content">
+        <h2>
+            Contact Us:
+            
+        </h2>
+        <div class="link">
+            <a href="mailto:amitkushwah3390@gmail.com">Gmail</a>
+            <p>Whatsapp us:8200873390</p>
+        </div>
+
+        <div class="follow">
+            <h2 class="follow">Follow us:</h2><br>
+            <a href="https://www.instagram.com/__amit_kushwaha_">instagram</a>
+            <a href="https://github.com/Amit-J-Kushwaha">Github</a>
+            <a href="https://x.com/KushwahaAmitJ?t=iUx8NzZVOOr9r9y7hzSWIQQs=09">Twitter</a>
+        </div>
+        
+    </center>
+
+    <center>
+        <div class="form">
+            <h2>Contact Form</h2>
+            <label for="name">Name</label><br><input type="text" placeholder="Enter Your Name" id="name" class="name" style="border-radius: 20%;"><br>
+
+            <label for="email">Email</label><br><input type="text" placeholder="Enter Your Email Id" id="email" class="email"><br>
+
+            <label for="phone">Phone</label><br><input type="text"  placeholder="Enter your Phone number" id="phone" class="phone"><br>
+            <br>
+            
+            <button  onclick="alert()">Submit</button>
+            <p id="error-message" class="error"></p>
+
+
+
+        </div>
+    </center>
+    <script>
+
+    
+        function valid(){
+            var name = document.froms['form']['name'].value;
+            var email = document.froms['form']['email'].value;
+            var phone = document.froms['form']['phone'].value;
+
+            if(name == "" || email=="" || phone==""){
+                document.getElementById("error-message").innerHTML = "please enter data";
+                return false;
+            }
+            else{
+                document.getElementById("error-message").innerHTML = "okay done";
+                return true
+            }
+        }
+
+
+        
+    </script>
+</body>
+</html>

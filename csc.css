@@ -1,0 +1,130 @@
+body {
+    font-family: cursive;
+    background-color:rgba(242, 238, 238, 0.7);
+   /* background-image: url('../club/image.png');
+    background-size: cover;*/
+    
+    background-repeat: no-repeat;
+    
+  }
+  /*.sidenav{
+
+  }
+  p{
+    color: white;
+  }*/
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    position: fixed;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #efeded;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .logo{
+    margin-top: 20px;
+    width: 50px;
+    height: inherit;
+    border-radius: 50%;
+    align-items: center;
+    justify-content:center;
+    
+  }
+  
+  .content{
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+    border-top:solid 2px black; 
+    margin-top:3%;
+  }
+  .content h2{
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .sectionFirst h2,p{
+align-items: center;
+text-align: center;
+
+  }
+  .Statment{
+    margin: 30px;
+  }
+
+  .lastSection{
+    background-color:rgba(237, 233, 233, 0.7);
+  }
+  .right{
+    margin: 0;
+    padding: 0;
+  }
+  .right ul li{
+    text-decoration: none;
+    list-style-type: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+  }
+
+  .right ul a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #546;
+    margin-left: 7px;
+    color: rgb(9, 9, 175);
+    
+  }
+
+  a{
+    text-decoration: none;
+    color: rgb(9, 9, 175);
+  }
+
+
+  .title{
+    font-size: 120%;
+    text-decoration: none;
+    
+}
+.top{
+    font-size: 140%;
+    
+}
+
+
+  @media only screen and (max-width:350px){
+    
+
+    .Statment{
+        margin: 0;
+      }
+    
+
+  }
